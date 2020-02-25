@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GeoCSV Lite</title>
+    <title>GeoCSV JS</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="css/style.css" rel="stylesheet" type="text/css">
@@ -11,9 +11,9 @@ integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIpt
 crossorigin=""/>
   </head>
   <body>
-    <h1>GeoCSV Lite</h1>
+    <h1>GeoCSV JS</h1>
     <h4>
-      An ultra-lightweight tool to show comma-separated value data on a map
+      An even more ultra-lightweight tool to show comma-separated value data on a map
     </h4>
     <p id="message"></p>
     <p id="error"></p>
@@ -184,8 +184,6 @@ crossorigin=""></script>
     /* Map using data from element content */
     GeoCSV.initialise_map_element("element-content-map",
                                             document.getElementById("element-content-map").innerText);
-</script>
-<!-- script>
     /* Map using inline CSV passed to the function */
     GeoCSV.initialise_map_element("inline-csv-map",
                                             "Country,Name,Latitude,Longitude,CountryCode,Continent\n" +
@@ -250,6 +248,6 @@ crossorigin=""></script>
     /* Map using CSV from URL */
     var url = window.location.href.substring(0, window.location.href.length - "index.html".length) + "data/europe-capitals.csv";
     GeoCSV.initialise_map_element("url-map", url);
-  </script -->
+  </script>
   </body>
 </html>

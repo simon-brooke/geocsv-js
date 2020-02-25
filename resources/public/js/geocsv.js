@@ -10,21 +10,26 @@ var GeoCSV = {
       var record = new Object();
 
       for ( i = 0; i < Math.min( ks.length, vs.length); i++) {
+        if ( ks[ i]) {
           record[ ks[ i]] = vs[ i];
+        }
       }
 
       return record;
     },
 
     prepareRecords( data) {
-      var cols = data[0].forEach( c => {
-        c.trim().toLowerCase().replace( /[^\w\d]+/, "-");
+      var cols = data[0].map( c => {
+        return c.trim().toLowerCase().replace( /[^\w\d]+/, "-");
       });
+
+      console.log( "data[0]: " + data[0] + "; cols: " + cols);
 
       var rest = data.slice( 1);
 
       // I should be able to do this with a forEach over data.slice( 1), but
       // I've failed to make it work.
+
       var result = [];
 
       for ( j = 1; j < rest.length; j++) {
@@ -71,7 +76,7 @@ var GeoCSV = {
     popupContent( record) {
       var c = "<h5>" + record[ "name"] + "</h5><table>";
 
-      record.keys().foreach( k => {
+      Object.keys(record).forEach( k => {
         c += "<tr><th>" +
           k +
           "</th><td>" +
@@ -85,21 +90,26 @@ var GeoCSV = {
     addPin( record, index, view) {
       var lat = Number( record[ "latitude"]);
       var lng = Number( record[ "longitude"]);
-      var pin = L.icon( {iconAnchor: [16, 41],
-                         iconSize: [32, 42],
-                         iconUrl: "img/map-pins/" +
-                                 this.pinImage( record) +
-                                 ".png",
-                         riseOnHover: true,
-                         shadowAnchor: [16, 23],
-                         shadowSize: [57, 24],
-                         shadowUrl: "img/map-pins/shadow_pin.png"});
-      var marker = L.marker( L.latLng( lat, lng),
-                            {icon: pin, title: record["name"]});
-      marker.bindPopup( popupContent( record));
-      marker.addTo( view);
 
-      return marker;
+      if ( !isNaN( lat) && !isNaN( lng)) {
+        var pin = L.icon( {iconAnchor: [16, 41],
+                           iconSize: [32, 42],
+                           iconUrl: "img/map-pins/" +
+                           this.pinImage( record) +
+                           ".png",
+                           riseOnHover: true,
+                           shadowAnchor: [16, 23],
+                           shadowSize: [57, 24],
+                           shadowUrl: "img/map-pins/shadow_pin.png"});
+        var marker = L.marker( L.latLng( lat, lng),
+                              {icon: pin, title: record["name"]});
+        marker.bindPopup( this.popupContent( record));
+        marker.addTo( view);
+
+        return marker;
+      } else {
+        return null;
+      }
     },
 
     removePins( view) {
@@ -143,10 +153,15 @@ var GeoCSV = {
     },
 
     refreshPins( view, records) {
-      removePins( view);
-      record.forEach( r => {
-      });
-      computeBounds( view, records);
+      this.removePins( view);
+
+      for ( i = 0; i < records.length; i++) {
+        if( records[i]) {
+          this.addPin( records[i], i, view);
+        }
+      }
+
+      this.computeBounds( view, records);
     }
   },
 
@@ -208,7 +223,7 @@ var GeoCSV = {
       this.Notify.message( "Found " + records.length +
                           " records of inline data for map " + id);
 
-      this.Gis.refreshPins( view, records);
+      this.GIS.refreshPins( view, records);
     }
   }
 }
