@@ -5,11 +5,17 @@
  */
 
 var GeoCSV = {
+  /**
+   * Methods for disentangling data.
+   */
   Data: {
+    /**
+     * Prepare a single record (Object) from the keys `ks` and values `vs`.
+     */
     prepareRecord( ks, vs) {
       var record = new Object();
 
-      for ( i = 0; i < Math.min( ks.length, vs.length); i++) {
+      for ( i = 0; i < Math.min( ks.length, vs.length); i += 1) {
         if ( ks[ i]) {
           record[ ks[ i]] = vs[ i];
         }
@@ -18,6 +24,11 @@ var GeoCSV = {
       return record;
     },
 
+    /**
+     * Prepare an array record objects from this `data`, assumed to be data
+     * as parsed by [PapaParse](https://www.papaparse.com/) from a CSV file
+     * with column headers in the first row.
+     */
     prepareRecords( data) {
       var cols = data[0].map( c => {
         return c.trim().toLowerCase().replace( /[^\w\d]+/, "-");
@@ -39,13 +50,17 @@ var GeoCSV = {
       return result;
     },
 
-    getData( data_source) {
-      var p = Papa.parse( data_source);
+    /**
+     * Parse this `dataSource` and return it as record objects.
+     * Doesn't yet work for URLs.
+     */
+    getData( dataSource) {
+      var p = Papa.parse( dataSource);
       var data = p.data;
 
       if ( p.errors.length > 0) {
         try {
-          data = JSON.parse( data_source);
+          data = JSON.parse( dataSource);
         }
         catch( anything) {
           data = null;
@@ -55,11 +70,19 @@ var GeoCSV = {
       if ( data instanceof Array) {
         return this.prepareRecords( data);
       } else {
+        // this is where I should handle URLs.
         return null;
       }
     }
   },
+
+  /**
+   * Methods related to locating and presenting data on the map
+   */
   GIS: {
+    /**
+     * Return an appropriate pin image name for this `record`.
+     */
     pinImage( record) {
       var c = record["category"];
 
@@ -73,6 +96,10 @@ var GeoCSV = {
       }
     },
 
+    /**
+     * Return appropriate HTML formatted popup content for this
+     * `record`.
+     */
     popupContent( record) {
       var c = "<h5>" + record[ "name"] + "</h5><table>";
 
@@ -87,7 +114,10 @@ var GeoCSV = {
       return c + "</table>";
     },
 
-    addPin( record, index, view) {
+    /**
+     * Add an appropriate marker for this `record` on this `view`.
+     */
+    addPin( record, view) {
       var lat = Number( record[ "latitude"]);
       var lng = Number( record[ "longitude"]);
 
@@ -112,6 +142,9 @@ var GeoCSV = {
       }
     },
 
+    /**
+     * Remove all pins from this map `view`.
+     */
     removePins( view) {
       view.eachLayer( l => {
         if ( l instanceof L.marker) {
@@ -122,6 +155,10 @@ var GeoCSV = {
       return view;
     },
 
+    /**
+     * Pan and zoom this map `view` to focus these `records`.
+     * TODO: This isn't working *nearly* as well as the ClojureScript version.
+     */
     computeBounds( view, records) {
       if ( records.length > 0) {
         var minLng = 180;
@@ -152,23 +189,35 @@ var GeoCSV = {
       }
     },
 
+    /**
+     * Add a marker to this map `view` for each record in these `records`
+     * which has valid `latitude`and `longitude` properties, first removing
+     * any existing markers.
+     */
     refreshPins( view, records) {
       this.removePins( view);
 
-      for ( i = 0; i < records.length; i++) {
-        if( records[i]) {
-          this.addPin( records[i], i, view);
+      records.forEach( r => {
+        if( r) {
+          this.addPin( r, view);
         }
-      }
+      });
 
       this.computeBounds( view, records);
     }
   },
 
+  /**
+   * Methods related to displaying the map.
+   */
   Map: {
     views: new Object(),
 
-    didMount(id, lat, lng, zoom) {
+    /**
+     * Create a map overlaying the HTML element with this `id`, centered at
+     * these `lat` and `lng` coordinates, with this initial `zoom` value.
+     */
+    createMap(id, lat, lng, zoom) {
       var v = L.map( id).setView( {lat: lat, lon: lng}, zoom);
 
       L.tileLayer("https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png", {
@@ -179,22 +228,34 @@ var GeoCSV = {
       return v;
     },
 
+    /**
+     * Add a map view to my named views overlaying the HTML element with this
+     * `id` and centered at these `lat` and `lng` coordinates, with this
+     * initial `zoom` value, provided that it does not already exist. Return
+     * the view.
+     */
     addView( id, lat, lng, zoom) {
       /* can"t re-add a view to an element to which we"ve already added one */
       if ( this.views[ id]) {
         return this.views[ id];
       } else {
-        var v = this.didMount( id, lat, lng, zoom);
+        var v = this.createMap( id, lat, lng, zoom);
         this.views[ id] = v;
         return v;
       }
     },
 
+    /**
+     * Get the view with this `id` from among my named views.
+     */
     getView( id) {
       return this.views[ id];
     }
   },
 
+  /**
+   * Methods related to notification and logging.
+   */
   Notify: {
     /**
      * Show this error `m` to the user and log it.
@@ -213,17 +274,48 @@ var GeoCSV = {
     }
   },
 
-  initialise_map_element( id, data_source) {
+  /**
+   * Initialise a map view overlaying the HTML element with this `id`, and
+   * decorate it with markers as specified in the data from this source.
+   */
+  initialiseMapElement( id, dataSource) {
     this.Notify.message( "initialise_map_element called with arguments id = `" +
                         id + "`");
     var view = this.Map.addView( id, 0, 0, 0);
-    var records = this.Data.getData( data_source);
+    var records = this.Data.getData( dataSource);
 
     if ( records instanceof Array) {
       this.Notify.message( "Found " + records.length +
                           " records of inline data for map " + id);
 
       this.GIS.refreshPins( view, records);
+    } else {
+      // is it a URL?
+      try {
+        fetch(dataSource)
+        .then((response) => {
+          console.debug( response.blob());
+
+          if (response.ok) {
+            return response.text();
+          } else {
+            throw new Error( "Bad response from server: " + response.status);
+          }
+        }).then( text => {
+          var records = this.Data.getData( text);
+
+          if ( records instanceof Array) {
+            this.Notify.message( "Found " + records.length +
+                                " records of data for map " + id);
+
+            this.GIS.refreshPins( view, records);
+          } else {
+            throw new Error( "No data?");
+          }
+        });
+      } catch (error) {
+        this.Notify.error( error);
+      }
     }
   }
 }
