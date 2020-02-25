@@ -266,7 +266,12 @@ var GeoCSV = {
      */
     error( m) {
       console.error( m);
-      document.getElementById( "error").innerText = m;
+      try {
+        document.getElementById( "error").innerText = m;
+      }
+      catch (anything) {
+        console.warn( "Error while trying to warn user: ", anything);
+      }
     },
 
     /**
@@ -274,7 +279,12 @@ var GeoCSV = {
      */
     message( m) {
       console.log( m);
-      document.getElementById( "message").innerText = m;
+      try {
+        document.getElementById( "message").innerText = m;
+      }
+      catch (anything) {
+        console.warn( "Error while trying to notify user: ", anything);
+      }
     }
   },
 
