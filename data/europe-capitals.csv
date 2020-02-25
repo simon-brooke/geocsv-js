@@ -1,5 +1,5 @@
 Country,Name,Latitude,Longitude,CountryCode,Continent,Category
-Aland Islands,Mariehamn,60.116667,19.9,AX,Europe,AX
+Aland Islands,Mariehamn,60.116667,19.9,AX,Europe,
 Albania,Tirana,41.3166666666667,19.816667,AL,Europe,AL
 Andorra,Andorra la Vella,42.5,1.516667,AD,Europe,AD
 Armenia,Yerevan,40.1666666666667,44.5,AM,Europe,AM
@@ -14,7 +14,7 @@ Cyprus,Nicosia,35.1666666666667,33.366667,CY,Europe,CY
 Czech Republic,Prague,50.0833333333333,14.466667,CZ,Europe,CZ
 Denmark,Copenhagen,55.6666666666667,12.583333,DK,Europe,DK
 Estonia,Tallinn,59.4333333333333,24.716667,EE,Europe,EE
-Faroe Islands,Torshavn,62,-6.766667,FO,Europe,FO
+Faroe Islands,Torshavn,62,-6.766667,FO,Europe,
 Finland,Helsinki,60.1666666666667,24.933333,FI,Europe,FI
 France,Paris,48.8666666666667,2.333333,FR,Europe,FR
 Georgia,Tbilisi,41.6833333333333,44.833333,GE,Europe,GE
@@ -29,7 +29,7 @@ Ireland,Dublin,53.3166666666667,-6.233333,IE,Europe,IE
 Isle of Man,Douglas,54.15,-4.483333,IM,Europe,IM
 Italy,Rome,41.9,12.483333,IT,Europe,IT
 Jersey,Saint Helier,49.1833333333333,-2.1,JE,Europe,JE
-Kosovo,Pristina,42.6666666666667,21.166667,KO,Europe,KO
+Kosovo,Pristina,42.6666666666667,21.166667,KO,Europe,
 Latvia,Riga,56.95,24.1,LV,Europe,LV
 Liechtenstein,Vaduz,47.1333333333333,9.516667,LI,Europe,LI
 Lithuania,Vilnius,54.6833333333333,25.316667,LT,Europe,LT
@@ -50,7 +50,7 @@ Serbia,Belgrade,44.8333333333333,20.5,RS,Europe,RS
 Slovakia,Bratislava,48.15,17.116667,SK,Europe,SK
 Slovenia,Ljubljana,46.05,14.516667,SI,Europe,SI
 Spain,Madrid,40.4,-3.683333,ES,Europe,ES
-Svalbard,Longyearbyen,78.2166666666667,15.633333,SJ,Europe,SJ
+Svalbard,Longyearbyen,78.2166666666667,15.633333,SJ,Europe,
 Sweden,Stockholm,59.3333333333333,18.05,SE,Europe,SE
 Switzerland,Bern,46.9166666666667,7.466667,CH,Europe,CH
 Turkey,Ankara,39.9333333333333,32.866667,TR,Europe,TR

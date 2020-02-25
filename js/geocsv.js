@@ -294,8 +294,6 @@ var GeoCSV = {
       try {
         fetch(dataSource)
         .then((response) => {
-          console.debug( response.blob());
-
           if (response.ok) {
             return response.text();
           } else {
