@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<!-- Icon created for SceneHere (c) 2010 Simon Brooke $Revision: 1.2 $ -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="240.5"
+   height="317.00851"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="Anchor-customer-pin.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/simon/workspace/geocsv/resources/public/img/map-pins/Anchor-customer-pin.png"
+   inkscape:export-xdpi="11.98"
+   inkscape:export-ydpi="11.98"
+   version="1.1">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3155">
+      <stop
+         style="stop-color:#ffff67;stop-opacity:1;"
+         offset="0"
+         id="stop3157" />
+      <stop
+         id="stop3163"
+         offset="1"
+         style="stop-color:#ffd200;stop-opacity:0.74789917;" />
+      <stop
+         style="stop-color:#ffff67;stop-opacity:0;"
+         offset="1"
+         id="stop3159" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="1.4"
+     inkscape:cx="-80.735278"
+     inkscape:cy="184.16561"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2383"
+       originx="-384.75"
+       originy="-548.24148" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Basic pin for SceneHere</dc:title>
+        <dc:date>20100801</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Simon Brooke</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Copyright (c) 2010 Simon Brooke</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:identifier>basic_map_pin.svg</dc:identifier>
+        <dc:description>
+		Basic default map pin
+		$Revision: 1.2 $
+	</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-384.75,-187.11218)">
+    <path
+       style="fill:#7fff00;fill-opacity:0.70588237;fill-rule:evenodd;stroke:#4f4f4f;stroke-width:10.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 430,192.36218 150,0 c 20,1e-5 40,20.00001 40,40 l 0,150 c 0,20.00001 -20,40.00001 -40,40 l -40,0 c -20,0 -20,46.66667 -30,70 -13.33333,-23.33333 -20,-70 -40,-70 l -40,0 c -20,10e-6 -40,-19.99999 -40,-40 l 0,-150 c 0,-19.99999 20,-39.99999 40,-40 z"
+       id="path2387"
+       sodipodi:nodetypes="cccccccccccc"
+       inkscape:connector-curvature="0" />
+    <g
+       id="g882"
+       transform="matrix(0.540519,0,0,0.540519,400.41384,206.99039)">
+      <g
+         id="g825">
+        <path
+           id="path821"
+           d="m 187.74,78.652 c -14.697,0 -26.655,-11.957 -26.655,-26.654 0,-14.698 11.958,-26.655 26.655,-26.655 14.698,0 26.655,11.957 26.655,26.655 0,14.697 -11.957,26.654 -26.655,26.654 z m 0,-45.309 c -10.286,0 -18.655,8.369 -18.655,18.655 0,10.286 8.369,18.654 18.655,18.654 10.287,0 18.655,-8.368 18.655,-18.654 0,-10.286 -8.368,-18.655 -18.655,-18.655 z"
+           inkscape:connector-curvature="0" />
+        <path
+           id="path823"
+           d="m 186.24,372.479 c -0.298,0 -0.596,-0.033 -0.889,-0.1 -38.095,-8.683 -65.694,-29.495 -82.14,-45.426 C 91.462,315.571 83.658,305.142 79.6,299.175 l -7.074,10.099 c -0.749,1.069 -1.973,1.705 -3.276,1.705 -0.015,0 -0.03,0 -0.046,0 -1.321,-0.016 -2.549,-0.682 -3.282,-1.781 -12.837,-19.252 -17.461,-42.672 -13.37,-67.729 3.07,-18.805 9.875,-31.807 10.163,-32.351 0.683,-1.289 2.012,-2.104 3.471,-2.128 0.021,-0.001 0.043,-0.001 0.064,-0.001 1.434,0 2.76,0.768 3.473,2.016 18.548,32.459 38.716,51.604 46.788,57.192 1.19,0.823 1.844,2.226 1.709,3.666 -0.136,1.44 -1.037,2.696 -2.359,3.283 l -8.991,3.985 c 16.622,15.09 36.793,24.968 58.871,28.819 V 151.993 h -63.205 c -4.296,6.236 -10.842,9.894 -17.908,9.894 -12.553,0 -22.766,-11.616 -22.766,-25.894 0,-14.277 10.212,-25.893 22.766,-25.893 7.065,0 13.611,3.657 17.908,9.894 h 63.205 V 99.113 C 147.428,90.58 135.742,72.373 135.742,51.998 135.742,23.326 159.069,0 187.74,0 c 28.672,0 51.998,23.326 51.998,51.998 0,21.533 -13.144,40.631 -32.998,48.404 v 19.592 h 63.204 c 4.297,-6.236 10.843,-9.894 17.908,-9.894 12.553,0 22.765,11.615 22.765,25.893 0,14.277 -10.212,25.894 -22.765,25.894 -7.065,0 -13.611,-3.657 -17.908,-9.894 H 206.74 v 153.959 c 22.078,-3.852 42.248,-13.729 58.871,-28.819 l -8.991,-3.985 c -1.324,-0.588 -2.228,-1.845 -2.362,-3.287 -0.134,-1.442 0.522,-2.845 1.716,-3.666 8.067,-5.584 28.235,-24.73 46.783,-57.189 0.713,-1.248 2.04,-2.016 3.473,-2.016 0.022,0 0.044,0 0.065,0.001 1.458,0.023 2.788,0.839 3.471,2.128 0.288,0.544 7.092,13.546 10.163,32.351 4.091,25.057 -0.532,48.477 -13.37,67.729 -0.733,1.1 -1.961,1.766 -3.282,1.781 -0.015,0 -0.031,0 -0.046,0 -1.304,0 -2.527,-0.636 -3.276,-1.705 l -7.074,-10.099 c -4.059,5.968 -11.863,16.398 -23.612,27.778 -16.445,15.931 -44.044,36.743 -82.139,45.426 -0.294,0.066 -0.592,0.099 -0.89,0.099 z M 79.749,287.99 c 0.06,0 0.12,10e-4 0.18,0.004 1.367,0.061 2.608,0.817 3.289,2.005 0.335,0.581 34.26,58.277 103.021,74.375 68.89,-16.127 102.686,-73.792 103.021,-74.375 0.682,-1.188 1.922,-1.943 3.289,-2.005 1.367,-0.075 2.67,0.581 3.456,1.701 l 7.007,10.004 c 17.898,-31.707 8.232,-65.716 2.694,-79.955 -16.254,26.67 -31.861,41.966 -39.801,48.77 l 8.415,3.729 c 1.206,0.535 2.07,1.629 2.312,2.925 0.241,1.297 -0.172,2.629 -1.105,3.561 -19.722,19.722 -44.706,32.12 -72.251,35.855 -1.147,0.154 -2.3,-0.191 -3.169,-0.951 -0.87,-0.76 -1.369,-1.858 -1.369,-3.013 V 147.993 c 0,-2.209 1.791,-4 4,-4 h 69.418 c 1.445,0 2.777,0.779 3.485,2.038 2.77,4.919 7.333,7.855 12.208,7.855 8.142,0 14.765,-8.027 14.765,-17.894 0,-9.867 -6.624,-17.893 -14.765,-17.893 -4.875,0 -9.438,2.937 -12.208,7.855 -0.709,1.259 -2.041,2.038 -3.485,2.038 H 202.74 c -2.209,0 -4,-1.791 -4,-4 v -26.4 c 0,-1.728 1.109,-3.26 2.75,-3.8 18.092,-5.949 30.248,-22.744 30.248,-41.794 C 231.738,27.737 212.001,8 187.74,8 c -24.26,0 -43.997,19.737 -43.997,43.998 0,18.013 10.794,34.022 27.5,40.787 1.51,0.612 2.499,2.078 2.499,3.708 v 27.501 c 0,2.209 -1.791,4 -4,4 h -69.419 c -1.445,0 -2.777,-0.779 -3.486,-2.038 -2.769,-4.919 -7.332,-7.855 -12.207,-7.855 -8.142,0 -14.766,8.026 -14.766,17.893 0,9.867 6.624,17.894 14.766,17.894 4.875,0 9.438,-2.937 12.207,-7.855 0.709,-1.259 2.041,-2.038 3.486,-2.038 h 69.419 c 2.209,0 4,1.791 4,4 v 162.626 c 0,1.154 -0.499,2.253 -1.369,3.013 -0.87,0.759 -2.021,1.104 -3.169,0.951 -27.546,-3.734 -52.53,-16.133 -72.252,-35.855 -0.932,-0.932 -1.345,-2.264 -1.104,-3.561 0.242,-1.296 1.106,-2.39 2.312,-2.925 l 8.414,-3.729 c -7.939,-6.802 -23.542,-22.096 -39.794,-48.756 -5.521,14.262 -15.16,48.303 2.688,79.94 l 7.006,-10.003 c 0.75,-1.072 1.974,-1.706 3.275,-1.706 z"
+           inkscape:connector-curvature="0" />
+      </g>
+      <g
+         id="g827" />
+      <g
+         id="g829" />
+      <g
+         id="g831" />
+      <g
+         id="g833" />
+      <g
+         id="g835" />
+      <g
+         id="g837" />
+      <g
+         id="g839" />
+      <g
+         id="g841" />
+      <g
+         id="g843" />
+      <g
+         id="g845" />
+      <g
+         id="g847" />
+      <g
+         id="g849" />
+      <g
+         id="g851" />
+      <g
+         id="g853" />
+      <g
+         id="g855" />
+    </g>
+  </g>
+</svg>

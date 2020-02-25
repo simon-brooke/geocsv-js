@@ -1,0 +1,188 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<!-- Icon created for SceneHere (c) 2010 Simon Brooke $Revision: 1.2 $ -->
+
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   width="240.5"
+   height="317.00851"
+   id="svg2"
+   sodipodi:version="0.32"
+   inkscape:version="0.92.3 (2405546, 2018-03-11)"
+   sodipodi:docname="Planning-authority-pin.svg"
+   inkscape:output_extension="org.inkscape.output.svg.inkscape"
+   inkscape:export-filename="/home/simon/workspace/geocsv/resources/public/img/map-pins/Planning-authority-pin.png"
+   inkscape:export-xdpi="11.98"
+   inkscape:export-ydpi="11.98"
+   version="1.1">
+  <defs
+     id="defs4">
+    <linearGradient
+       id="linearGradient3155">
+      <stop
+         style="stop-color:#ffff67;stop-opacity:1;"
+         offset="0"
+         id="stop3157" />
+      <stop
+         id="stop3163"
+         offset="1"
+         style="stop-color:#ffd200;stop-opacity:0.74789917;" />
+      <stop
+         style="stop-color:#ffff67;stop-opacity:0;"
+         offset="1"
+         id="stop3159" />
+    </linearGradient>
+    <inkscape:perspective
+       sodipodi:type="inkscape:persp3d"
+       inkscape:vp_x="0 : 526.18109 : 1"
+       inkscape:vp_y="0 : 1000 : 0"
+       inkscape:vp_z="744.09448 : 526.18109 : 1"
+       inkscape:persp3d-origin="372.04724 : 350.78739 : 1"
+       id="perspective10" />
+  </defs>
+  <sodipodi:namedview
+     id="base"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     gridtolerance="10000"
+     guidetolerance="10"
+     objecttolerance="10"
+     inkscape:pageopacity="0.0"
+     inkscape:pageshadow="2"
+     inkscape:zoom="0.98994949"
+     inkscape:cx="-550.09493"
+     inkscape:cy="77.96301"
+     inkscape:document-units="px"
+     inkscape:current-layer="layer1"
+     showgrid="true"
+     inkscape:window-width="1920"
+     inkscape:window-height="1016"
+     inkscape:window-x="0"
+     inkscape:window-y="27"
+     fit-margin-top="0"
+     fit-margin-left="0"
+     fit-margin-right="0"
+     fit-margin-bottom="0"
+     inkscape:window-maximized="1">
+    <inkscape:grid
+       type="xygrid"
+       id="grid2383"
+       originx="-384.75"
+       originy="-548.24148" />
+  </sodipodi:namedview>
+  <metadata
+     id="metadata7">
+    <rdf:RDF>
+      <cc:Work
+         rdf:about="">
+        <dc:format>image/svg+xml</dc:format>
+        <dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
+        <dc:title>Basic pin for SceneHere</dc:title>
+        <dc:date>20100801</dc:date>
+        <dc:creator>
+          <cc:Agent>
+            <dc:title>Simon Brooke</dc:title>
+          </cc:Agent>
+        </dc:creator>
+        <dc:rights>
+          <cc:Agent>
+            <dc:title>Copyright (c) 2010 Simon Brooke</dc:title>
+          </cc:Agent>
+        </dc:rights>
+        <dc:identifier>basic_map_pin.svg</dc:identifier>
+        <dc:description>
+		Basic default map pin
+		$Revision: 1.2 $
+	</dc:description>
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     transform="translate(-384.75,-187.11218)">
+    <path
+       style="fill:#e6e6e6;fill-opacity:0.70403588;fill-rule:evenodd;stroke:#4f4f4f;stroke-width:10.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 430,192.36218 150,0 c 20,1e-5 40,20.00001 40,40 l 0,150 c 0,20.00001 -20,40.00001 -40,40 l -40,0 c -20,0 -20,46.66667 -30,70 -13.33333,-23.33333 -20,-70 -40,-70 l -40,0 c -20,10e-6 -40,-19.99999 -40,-40 l 0,-150 c 0,-19.99999 20,-39.99999 40,-40 z"
+       id="path2387"
+       sodipodi:nodetypes="cccccccccccc"
+       inkscape:connector-curvature="0"
+       inkscape:export-filename="/home/simon/workspace/youyesyet/resources/public/img/map-pins/Planning-authority-pin.png"
+       inkscape:export-xdpi="11.98"
+       inkscape:export-ydpi="11.98" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g986" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g988" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g990" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g992" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g994" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g996" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g998" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g1000" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g1002" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g1004" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g1006" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g1008" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g1010" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g1012" />
+    <g
+       transform="translate(354.75,65.100704)"
+       id="g1014" />
+    <g
+       transform="matrix(0.47531389,0,0,0.47531389,410.17013,212.25752)"
+       id="g984"
+       inkscape:export-filename="/home/simon/workspace/youyesyet/resources/public/img/map-pins/Planning-authority-pin.png"
+       inkscape:export-xdpi="11.98"
+       inkscape:export-ydpi="11.98">
+      <path
+         inkscape:connector-curvature="0"
+         d="m 13.076,135.976 c 0.004,0.166 0.01,0.332 0.025,0.499 0.009,0.098 0.023,0.194 0.036,0.292 0.02,0.144 0.038,0.288 0.066,0.431 0.023,0.12 0.052,0.238 0.081,0.356 0.028,0.116 0.055,0.232 0.089,0.348 0.042,0.143 0.092,0.281 0.142,0.42 0.032,0.09 0.063,0.18 0.099,0.269 0.064,0.159 0.137,0.313 0.211,0.466 0.026,0.055 0.047,0.111 0.075,0.165 0.007,0.013 0.016,0.024 0.023,0.037 0.148,0.283 0.313,0.555 0.496,0.815 0.044,0.063 0.092,0.123 0.138,0.184 0.143,0.191 0.293,0.375 0.453,0.552 0.061,0.068 0.121,0.138 0.185,0.203 0.203,0.208 0.416,0.406 0.642,0.589 0.059,0.048 0.121,0.09 0.182,0.136 0.188,0.144 0.382,0.278 0.583,0.403 0.071,0.045 0.144,0.09 0.216,0.132 0.525,0.304 1.089,0.546 1.684,0.716 0.066,0.019 0.131,0.034 0.195,0.05 0.233,0.06 0.471,0.108 0.712,0.146 0.083,0.013 0.164,0.028 0.247,0.038 0.279,0.034 0.563,0.056 0.851,0.058 0.022,0.001 0.045,0.005 0.067,0.005 0.008,0 0.017,-0.001 0.025,-0.001 h 7.221 v 17.745 c 0,4.142 3.357,7.5 7.5,7.5 h 9.326 v 132 H 35.32 c -4.143,0 -7.5,3.357 -7.5,7.5 0,4.142 3.357,7.5 7.5,7.5 h 16.826 28.311 59.89 28.311 59.889 28.311 59.889 28.311 18.646 c 4.143,0 7.5,-3.358 7.5,-7.5 0,-4.143 -3.357,-7.5 -7.5,-7.5 h -11.146 v -132 h 12.954 c 0.039,0 0.078,-0.006 0.117,-0.006 0.039,0.001 0.078,0.006 0.117,0.006 4.143,0 7.5,-3.358 7.5,-7.5 v -17.745 h 6.895 c 0.04,0 0.079,-0.005 0.119,-0.006 0.043,0.001 0.086,0.008 0.128,0.008 2.714,0 5.334,-1.479 6.667,-4.056 1.903,-3.679 0.464,-8.204 -3.215,-10.107 L 204.912,36.568 c -1.324,-0.685 -2.756,-0.93 -4.137,-0.801 -1.377,-0.128 -2.804,0.116 -4.122,0.796 L 17.13,129.119 c -0.016,0.008 -0.029,0.018 -0.045,0.026 -0.153,0.081 -0.302,0.17 -0.448,0.261 -0.069,0.043 -0.142,0.082 -0.209,0.127 -0.116,0.077 -0.228,0.162 -0.34,0.246 -0.09,0.067 -0.183,0.131 -0.269,0.201 -0.073,0.06 -0.141,0.126 -0.212,0.188 -0.113,0.101 -0.229,0.199 -0.336,0.306 -0.039,0.039 -0.074,0.081 -0.112,0.122 -0.13,0.135 -0.258,0.27 -0.376,0.413 -0.036,0.044 -0.066,0.091 -0.102,0.136 -0.113,0.143 -0.225,0.286 -0.326,0.435 -0.087,0.128 -0.163,0.263 -0.242,0.396 -0.041,0.07 -0.088,0.138 -0.127,0.21 -0.112,0.204 -0.214,0.415 -0.307,0.63 -0.002,0.004 -0.004,0.008 -0.006,0.012 -0.086,0.201 -0.161,0.407 -0.229,0.616 -0.007,0.02 -0.017,0.041 -0.023,0.062 -0.052,0.163 -0.093,0.33 -0.133,0.497 -0.019,0.073 -0.041,0.145 -0.057,0.218 -0.025,0.122 -0.042,0.247 -0.063,0.372 -0.02,0.124 -0.043,0.249 -0.057,0.374 -0.01,0.091 -0.013,0.184 -0.02,0.276 -0.012,0.162 -0.023,0.323 -0.024,0.486 0,0.019 -0.003,0.038 -0.003,0.057 0.002,0.064 0.01,0.126 0.012,0.19 z m 187.697,-84.661 148.796,76.97 H 51.479 Z M 132.845,168.53 v 132 h -44.89 v -132 z m 88.199,0 v 132 h -44.889 v -132 z m -161.399,132 V 169.619 H 72.956 V 300.53 Z m 88.2,0 V 169.619 h 13.311 V 300.53 Z m 88.199,0 V 169.619 h 13.311 V 300.53 Z m 88.2,0 V 169.619 h 13.311 V 300.53 Z m -15,0 h -44.889 v -132 h 44.889 z m 49,-147 H 42.818 v -10.245 h 315.426 z"
+         id="path978" />
+      <path
+         inkscape:connector-curvature="0"
+         d="m 21.655,324.407 c -4.143,0 -7.5,3.358 -7.5,7.5 0,4.142 3.357,7.5 7.5,7.5 h 355.709 c 4.143,0 7.5,-3.358 7.5,-7.5 0,-4.142 -3.357,-7.5 -7.5,-7.5 z"
+         id="path980" />
+      <path
+         inkscape:connector-curvature="0"
+         d="M 391.52,348.285 H 7.5 c -4.142,0 -7.5,3.358 -7.5,7.5 0,4.142 3.358,7.5 7.5,7.5 h 384.02 c 4.143,0 7.5,-3.358 7.5,-7.5 0,-4.142 -3.358,-7.5 -7.5,-7.5 z"
+         id="path982" />
+    </g>
+  </g>
+</svg>

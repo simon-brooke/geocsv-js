@@ -1,0 +1,53 @@
+Country,Name,Latitude,Longitude,CountryCode,Continent
+Saint Martin,Marigot,18.0731,-63.082200,MF,North America
+American Samoa,Pago Pago,-14.266666666666667,-170.700000,AS,Australia
+Anguilla,The Valley,18.216666666666665,-63.050000,AI,North America
+Antigua and Barbuda,Saint John's,17.116666666666667,-61.850000,AG,North America
+Argentina,Buenos Aires,-34.583333333333336,-58.666667,AR,South America
+Aruba,Oranjestad,12.516666666666667,-70.033333,AW,North America
+Bahamas,Nassau,25.083333333333332,-77.350000,BS,North America
+Barbados,Bridgetown,13.1,-59.616667,BB,North America
+Belize,Belmopan,17.25,-88.766667,BZ,Central America
+Bermuda,Hamilton,32.28333333333333,-64.783333,BM,North America
+Bolivia,La Paz,-16.5,-68.150000,BO,South America
+Brazil,Brasilia,-15.783333333333333,-47.916667,BR,South America
+British Virgin Islands,Road Town,18.416666666666668,-64.616667,VG,North America
+Canada,Ottawa,45.416666666666664,-75.700000,CA,Central America
+Cayman Islands,George Town,19.3,-81.383333,KY,North America
+Chile,Santiago,-33.45,-70.666667,CL,South America
+Colombia,Bogota,4.6,-74.083333,CO,South America
+Costa Rica,San Jose,9.933333333333334,-84.083333,CR,Central America
+Cuba,Havana,23.116666666666667,-82.350000,CU,North America
+Curaçao,Willemstad,12.1,-68.916667,CW,North America
+Dominica,Roseau,15.3,-61.400000,DM,North America
+Dominican Republic,Santo Domingo,18.466666666666665,-69.900000,DO,North America
+Ecuador,Quito,-0.21666666666666667,-78.500000,EC,South America
+El Salvador,San Salvador,13.7,-89.200000,SV,Central America
+Falkland Islands,Stanley,-51.7,-57.850000,FK,South America
+Greenland,Nuuk,64.18333333333334,-51.750000,GL,Central America
+Grenada,Saint George's,12.05,-61.750000,GD,North America
+Guatemala,Guatemala City,14.616666666666667,-90.516667,GT,Central America
+Guyana,Georgetown,6.8,-58.150000,GY,South America
+Haiti,Port-au-Prince,18.533333333333335,-72.333333,HT,North America
+Honduras,Tegucigalpa,14.1,-87.216667,HN,Central America
+Jamaica,Kingston,18,-76.800000,JM,North America
+Mexico,Mexico City,19.433333333333334,-99.133333,MX,Central America
+Montserrat,Plymouth,16.7,-62.216667,MS,North America
+Nicaragua,Managua,12.133333333333333,-86.250000,NI,Central America
+Panama,Panama City,8.966666666666667,-79.533333,PA,Central America
+Paraguay,Asuncion,-25.266666666666666,-57.666667,PY,South America
+Peru,Lima,-12.05,-77.050000,PE,South America
+Puerto Rico,San Juan,18.466666666666665,-66.116667,PR,North America
+Saint Barthelemy,Gustavia,17.883333333333333,-62.850000,BL,North America
+Saint Kitts and Nevis,Basseterre,17.3,-62.716667,KN,North America
+Saint Lucia,Castries,14,-61.000000,LC,North America
+Saint Pierre and Miquelon,Saint-Pierre,46.766666666666666,-56.183333,PM,Central America
+Saint Vincent and the Grenadines,Kingstown,13.133333333333333,-61.216667,VC,Central America
+Sint Maarten,Philipsburg,18.016666666666666,-63.033333,SX,North America
+Suriname,Paramaribo,5.833333333333333,-55.166667,SR,South America
+Trinidad and Tobago,Port of Spain,10.65,-61.516667,TT,North America
+Turks and Caicos Islands,Grand Turk,21.466666666666665,-71.133333,TC,North America
+United States,Washington, D.C.,38.883333,-77.000000,US,Central America
+Uruguay,Montevideo,-34.85,-56.166667,UY,South America
+Venezuela,Caracas,10.483333333333333,-66.866667,VE,South America
+US Virgin Islands,Charlotte Amalie,18.35,-64.933333,VI,North America

@@ -1,0 +1,59 @@
+Country,Name,Latitude,Longitude,CountryCode,Continent
+Somaliland,Hargeisa,9.55,44.050000,NULL,Africa
+Western Sahara,El-Aaiún,27.153611,-13.203333,EH,Africa
+Algeria,Algiers,36.75,3.050000,DZ,Africa
+Angola,Luanda,-8.833333333333334,13.216667,AO,Africa
+Benin,Porto-Novo,6.483333333333333,2.616667,BJ,Africa
+Botswana,Gaborone,-24.633333333333333,25.900000,BW,Africa
+Burkina Faso,Ouagadougou,12.366666666666667,-1.516667,BF,Africa
+Burundi,Bujumbura,-3.3666666666666667,29.350000,BI,Africa
+Cameroon,Yaounde,3.8666666666666667,11.516667,CM,Africa
+Cape Verde,Praia,14.916666666666666,-23.516667,CV,Africa
+Central African Republic,Bangui,4.366666666666666,18.583333,CF,Africa
+Chad,N'Djamena,12.1,15.033333,TD,Africa
+Comoros,Moroni,-11.7,43.233333,KM,Africa
+Democratic Republic of the Congo,Kinshasa,-4.316666666666666,15.300000,CD,Africa
+Republic of Congo,Brazzaville,-4.25,15.283333,CG,Africa
+Cote d'Ivoire,Yamoussoukro,6.816666666666666,-5.266667,CI,Africa
+Djibouti,Djibouti,11.583333333333334,43.150000,DJ,Africa
+Egypt,Cairo,30.05,31.250000,EG,Africa
+Equatorial Guinea,Malabo,3.75,8.783333,GQ,Africa
+Eritrea,Asmara,15.333333333333334,38.933333,ER,Africa
+Ethiopia,Addis Ababa,9.033333333333333,38.700000,ET,Africa
+Gabon,Libreville,0.38333333333333336,9.450000,GA,Africa
+The Gambia,Banjul,13.45,-16.566667,GM,Africa
+Ghana,Accra,5.55,-0.216667,GH,Africa
+Guinea,Conakry,9.5,-13.700000,GN,Africa
+Guinea-Bissau,Bissau,11.85,-15.583333,GW,Africa
+Kenya,Nairobi,-1.2833333333333332,36.816667,KE,Africa
+Lesotho,Maseru,-29.316666666666666,27.483333,LS,Africa
+Liberia,Monrovia,6.3,-10.800000,LR,Africa
+Libya,Tripoli,32.88333333333333,13.166667,LY,Africa
+Madagascar,Antananarivo,-18.916666666666668,47.516667,MG,Africa
+Malawi,Lilongwe,-13.966666666666667,33.783333,MW,Africa
+Mali,Bamako,12.65,-8.000000,ML,Africa
+Mauritania,Nouakchott,18.066666666666666,-15.966667,MR,Africa
+Mauritius,Port Louis,-20.15,57.483333,MU,Africa
+Morocco,Rabat,34.016666666666666,-6.816667,MA,Africa
+Mozambique,Maputo,-25.95,32.583333,MZ,Africa
+Namibia,Windhoek,-22.566666666666666,17.083333,NA,Africa
+Niger,Niamey,13.516666666666667,2.116667,NE,Africa
+Nigeria,Abuja,9.083333333333334,7.533333,NG,Africa
+Rwanda,Kigali,-1.95,30.050000,RW,Africa
+Saint Helena,Jamestown,-15.933333333333334,-5.716667,SH,Africa
+Sao Tome and Principe,Sao Tome,0.3333333333333333,6.733333,ST,Africa
+Senegal,Dakar,14.733333333333333,-17.633333,SN,Africa
+Seychelles,Victoria,-4.616666666666667,55.450000,SC,Africa
+Sierra Leone,Freetown,8.483333333333333,-13.233333,SL,Africa
+Somalia,Mogadishu,2.066666666666667,45.333333,SO,Africa
+South Africa,Pretoria,-25.7,28.216667,ZA,Africa
+South Sudan,Juba,4.85,31.616667,SS,Africa
+Sudan,Khartoum,15.6,32.533333,SD,Africa
+Swaziland,Mbabane,-26.316666666666666,31.133333,SZ,Africa
+Tanzania,Dar es Salaam,-6.8,39.283333,TZ,Africa
+Togo,Lome,6.116666666666666,1.216667,TG,Africa
+Tunisia,Tunis,36.8,10.183333,TN,Africa
+Uganda,Kampala,0.31666666666666665,32.550000,UG,Africa
+Zambia,Lusaka,-15.416666666666666,28.283333,ZM,Africa
+Zimbabwe,Harare,-17.816666666666666,31.033333,ZW,Africa
+British Indian Ocean Territory,Diego Garcia,-7.3,72.400000,IO,Africa

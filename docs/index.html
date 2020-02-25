@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>GeoCSV Lite</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <link rel="icon" href="favicon.ico">
+    <if you prefer loading libraries from standard hosts, uncomment this and
+comment out the local source -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+crossorigin=""/ -->
+    <!-- link rel="stylesheet" href="vendor/node_modules/leaflet/dist/leaflet.css" type="text/css" -->
+    <!-- if you prefer loading libraries from standard hosts, un comment this and
+  comment out the local source -->
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+  integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+  crossorigin=""></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.1.0/papaparse.min.js"></script>
+    <!-- script src="vendor/node_modules/leaflet/dist/leaflet.js"></script -->
+    <!-- script src="vendor/node_modules/papaparse/papaparse.min.js"></script -->
+  </head>
+  <body>
+    <h1>GeoCSV Lite</h1>
+    <h4>
+      An ultra-lightweight tool to show comma-separated value data on a map
+    </h4>
+    <p id="message"></p>
+    <p id="error"></p>
+    <div id="app">
+      <p>
+      </p>
+      <h2>
+        Map using data from element content
+      </h2>
+      <p>
+        To make this work, you need a <samp>&lt;pre&gt;</samp> tag wrapping
+        the data. View source of this page to see this work.</samp>
+      </p>
+      <div id="element-content-map"
+           style="height: 600px; width: 80%; border: thin solid gray;">
+        <pre>
+        Country,Name,Latitude,Longitude,CountryCode,Continent
+        Saint Martin,Marigot,18.0731,-63.082200,MF,North America
+        American Samoa,Pago Pago,-14.266666666666667,-170.700000,AS,Australia
+        Anguilla,The Valley,18.216666666666665,-63.050000,AI,North America
+        Antigua and Barbuda,Saint John's,17.116666666666667,-61.850000,AG,North America
+        Argentina,Buenos Aires,-34.583333333333336,-58.666667,AR,South America
+        Aruba,Oranjestad,12.516666666666667,-70.033333,AW,North America
+        Bahamas,Nassau,25.083333333333332,-77.350000,BS,North America
+        Barbados,Bridgetown,13.1,-59.616667,BB,North America
+        Belize,Belmopan,17.25,-88.766667,BZ,Central America
+        Bermuda,Hamilton,32.28333333333333,-64.783333,BM,North America
+        Bolivia,La Paz,-16.5,-68.150000,BO,South America
+        Brazil,Brasilia,-15.783333333333333,-47.916667,BR,South America
+        British Virgin Islands,Road Town,18.416666666666668,-64.616667,VG,North America
+        Canada,Ottawa,45.416666666666664,-75.700000,CA,Central America
+        Cayman Islands,George Town,19.3,-81.383333,KY,North America
+        Chile,Santiago,-33.45,-70.666667,CL,South America
+        Colombia,Bogota,4.6,-74.083333,CO,South America
+        Costa Rica,San Jose,9.933333333333334,-84.083333,CR,Central America
+        Cuba,Havana,23.116666666666667,-82.350000,CU,North America
+        Curaçao,Willemstad,12.1,-68.916667,CW,North America
+        Dominica,Roseau,15.3,-61.400000,DM,North America
+        Dominican Republic,Santo Domingo,18.466666666666665,-69.900000,DO,North America
+        Ecuador,Quito,-0.21666666666666667,-78.500000,EC,South America
+        El Salvador,San Salvador,13.7,-89.200000,SV,Central America
+        Falkland Islands,Stanley,-51.7,-57.850000,FK,South America
+        Greenland,Nuuk,64.18333333333334,-51.750000,GL,Central America
+        Grenada,Saint George's,12.05,-61.750000,GD,North America
+        Guatemala,Guatemala City,14.616666666666667,-90.516667,GT,Central America
+        Guyana,Georgetown,6.8,-58.150000,GY,South America
+        Haiti,Port-au-Prince,18.533333333333335,-72.333333,HT,North America
+        Honduras,Tegucigalpa,14.1,-87.216667,HN,Central America
+        Jamaica,Kingston,18,-76.800000,JM,North America
+        Mexico,Mexico City,19.433333333333334,-99.133333,MX,Central America
+        Montserrat,Plymouth,16.7,-62.216667,MS,North America
+        Nicaragua,Managua,12.133333333333333,-86.250000,NI,Central America
+        Panama,Panama City,8.966666666666667,-79.533333,PA,Central America
+        Paraguay,Asuncion,-25.266666666666666,-57.666667,PY,South America
+        Peru,Lima,-12.05,-77.050000,PE,South America
+        Puerto Rico,San Juan,18.466666666666665,-66.116667,PR,North America
+        Saint Barthelemy,Gustavia,17.883333333333333,-62.850000,BL,North America
+        Saint Kitts and Nevis,Basseterre,17.3,-62.716667,KN,North America
+        Saint Lucia,Castries,14,-61.000000,LC,North America
+        Saint Pierre and Miquelon,Saint-Pierre,46.766666666666666,-56.183333,PM,Central America
+        Saint Vincent and the Grenadines,Kingstown,13.133333333333333,-61.216667,VC,Central America
+        Sint Maarten,Philipsburg,18.016666666666666,-63.033333,SX,North America
+        Suriname,Paramaribo,5.833333333333333,-55.166667,SR,South America
+        Trinidad and Tobago,Port of Spain,10.65,-61.516667,TT,North America
+        Turks and Caicos Islands,Grand Turk,21.466666,-71.133333,TC,North America
+        United States,Washington D.C.,38.883333,-77.000000,US,Central America
+        Uruguay,Montevideo,-34.85,-56.166667,UY,South America
+        Venezuela,Caracas,10.483333333333333,-66.866667,VE,South America
+        US Virgin Islands,Charlotte Amalie,18.35,-64.933333,VI,North America
+        </pre>
+      </div>
+      <h2>
+        Map using inline CSV
+      </h2>
+      <div id="inline-csv-map"
+           style="height: 600px; width: 80%; border: thin solid gray;"></div>
+      <h2>
+        Map using CSV from URL
+      </h2>
+      <p>
+        This is more limited than I would like, because of cross-site scripting
+        blocks; the URL <b>must</b> be sourced from the same host as the page.
+      </p>
+      <div id="url-map"
+           style="height: 600px; width: 80%; border: thin solid gray;"></div>
+      <div id="doc">
+        <p>
+          Use this page as a crib for how to use <b>GeoCSV Lite</b> in your projects. In order
+          for it to work, you need:
+        </p>
+        <ol>
+          <li>Javascript dependencies:
+            <ol>
+              <li><a href="">Leaflet</a> (provides mapping);</li>
+              <li><a href="">PapaParse</a> (provides CSV parsing);</li>
+            </ol>
+          </li>
+          <li>
+            A line which includes the geocsv_lite library, which should be
+            <em>after</em> those including the dependencies: <br/>
+            <samp>&lt;script src="js/compiled/geocsv_lite.js"
+              type="text/javascript"&gt;&lt;/script&gt;</samp>
+          </li>
+          <li>One (or more) <code>div</code> elements to contain your maps. It
+            is a requirement of Leaflet that these must have a fixed pixel height.
+            Each must have a distinct <code>id</code>;</li>
+          <li>
+            For each <code>div</code> which you wish to contain a map view,
+            an invocation of the function
+            <code>geocsv_lite.core.initialise_map_element(id, data-source)</code>: <br/>
+            <samp>&lt;script&gt;geocsv_lite.core.initialise_map_element("map", "data/data.csv");&lt;/script&gt;</samp>
+          </li>
+        </ol>
+        <p>
+          The value passed as <var>data-source</var> may be CSV text, or it
+          may be a URL from which CSV text can be sourced.
+        </p>
+        <h2>
+          Custom map pins
+        </h2>
+        <p>
+          <img src="img/map-pins/Anchor-customer-pin.png"/>
+          <img src="img/map-pins/Broadband-supplier-pin.png"/>
+          <img src="img/map-pins/Champion-pin.png"/>
+          <img src="img/map-pins/Developer-pin.png"/>
+          <img src="img/map-pins/Further-education-pin.png"/>
+          <img src="img/map-pins/Higher-education-pin.png"/>
+          <img src="img/map-pins/Investor-pin.png"/>
+          <img src="img/map-pins/Landowner-pin.png"/>
+          <img src="img/map-pins/Operator-pin.png"/>
+          <img src="img/map-pins/Unknown-pin.png"/>
+        </p>
+        <p>
+          If your CSV document has a column called <samp>category</samp> (case insensitive),
+          then, as with the full-fat GeoCSV, if there is an image file in the
+          <samp>img/map-pins</samp> subdirectory whose name is the value of that
+          column with <samp>-pin.png</samp> appended, then that image will be
+          used as the image for the map pin. The image should be 40 pixels high
+          and 30 wide. It will be anchored centre bottom. You are advised to use
+          <samp>Unknown-pin.png</samp> as the basis for your design.
+        </p>
+        <p>
+          <strong>WARNING:</strong> if you have a column called <samp>category</samp>,
+          and you don't have an appropriate pin image for each value present,
+          then you will get 'broken' pin images appearing on your map.
+        </p>
+    </div>
+    </div>
+  <footer>
+    <div id="credits">
+      <div>
+        <img height="16" width="16" alt="Clojure"
+             src="img/credits/clojure-icon.gif"/> Powered by
+        <a href="http://clojure.org">Clojure</a> ||
+        <img height="16" width="16" alt="GitHub"
+             src="img/credits/github-logo-transparent.png"/>Find me/fork me on
+        <a href="https://github.com/simon-brooke/geocsv-lite">Github</a> ||
+        <img height="16" width="16"
+             alt="Free Software Foundation"
+             src="img/credits/gnu.small.png"/>Licensed under the
+        <a href="http://www.gnu.org/licenses/gpl-2.0.html">GNU General Public License version 2.0</a>
+      </div>
+    </div>
+  </footer>
+  <script src="js/compiled/geocsv_lite.js" type="text/javascript"></script>
+  <script>
+    /* Map using data from element content */
+    geocsv_lite.core.initialise_map_element("element-content-map",
+                                            document.getElementById("element-content-map").innerText);
+    /* Map using inline CSV passed to the function */
+    geocsv_lite.core.initialise_map_element("inline-csv-map",
+                                            "Country,Name,Latitude,Longitude,CountryCode,Continent\n" +
+                                            "Somaliland,Hargeisa,9.55,44.050000,NULL,Africa\n" +
+                                            "Western Sahara,El-Aaiún,27.153611,-13.203333,EH,Africa\n" +
+                                            "Algeria,Algiers,36.75,3.050000,DZ,Africa\n" +
+                                            "Angola,Luanda,-8.833333333333334,13.216667,AO,Africa\n" +
+                                            "Benin,Porto-Novo,6.483333333333333,2.616667,BJ,Africa\n" +
+                                            "Botswana,Gaborone,-24.633333333333333,25.900000,BW,Africa\n" +
+                                            "Burkina Faso,Ouagadougou,12.366666666666667,-1.516667,BF,Africa\n" +
+                                            "Burundi,Bujumbura,-3.3666666666666667,29.350000,BI,Africa\n" +
+                                            "Cameroon,Yaounde,3.8666666666666667,11.516667,CM,Africa\n" +
+                                            "Cape Verde,Praia,14.916666666666666,-23.516667,CV,Africa\n" +
+                                            "Central African Republic,Bangui,4.366666666666666,18.583333,CF,Africa\n" +
+                                            "Chad,N'Djamena,12.1,15.033333,TD,Africa\n" +
+                                            "Comoros,Moroni,-11.7,43.233333,KM,Africa\n" +
+                                            "Democratic Republic of the Congo,Kinshasa,-4.316666666666666,15.300000,CD,Africa\n" +
+                                            "Republic of Congo,Brazzaville,-4.25,15.283333,CG,Africa\n" +
+                                            "Cote d'Ivoire,Yamoussoukro,6.816666666666666,-5.266667,CI,Africa\n" +
+                                            "Djibouti,Djibouti,11.583333333333334,43.150000,DJ,Africa\n" +
+                                            "Egypt,Cairo,30.05,31.250000,EG,Africa\n" +
+                                            "Equatorial Guinea,Malabo,3.75,8.783333,GQ,Africa\n" +
+                                            "Eritrea,Asmara,15.333333333333334,38.933333,ER,Africa\n" +
+                                            "Ethiopia,Addis Ababa,9.033333333333333,38.700000,ET,Africa\n" +
+                                            "Gabon,Libreville,0.38333333333333336,9.450000,GA,Africa\n" +
+                                            "The Gambia,Banjul,13.45,-16.566667,GM,Africa\n" +
+                                            "Ghana,Accra,5.55,-0.216667,GH,Africa\n" +
+                                            "Guinea,Conakry,9.5,-13.700000,GN,Africa\n" +
+                                            "Guinea-Bissau,Bissau,11.85,-15.583333,GW,Africa\n" +
+                                            "Kenya,Nairobi,-1.2833333333333332,36.816667,KE,Africa\n" +
+                                            "Lesotho,Maseru,-29.316666666666666,27.483333,LS,Africa\n" +
+                                            "Liberia,Monrovia,6.3,-10.800000,LR,Africa\n" +
+                                            "Libya,Tripoli,32.88333333333333,13.166667,LY,Africa\n" +
+                                            "Madagascar,Antananarivo,-18.916666666666668,47.516667,MG,Africa\n" +
+                                            "Malawi,Lilongwe,-13.966666666666667,33.783333,MW,Africa\n" +
+                                            "Mali,Bamako,12.65,-8.000000,ML,Africa\n" +
+                                            "Mauritania,Nouakchott,18.066666666666666,-15.966667,MR,Africa\n" +
+                                            "Mauritius,Port Louis,-20.15,57.483333,MU,Africa\n" +
+                                            "Morocco,Rabat,34.016666666666666,-6.816667,MA,Africa\n" +
+                                            "Mozambique,Maputo,-25.95,32.583333,MZ,Africa\n" +
+                                            "Namibia,Windhoek,-22.566666666666666,17.083333,NA,Africa\n" +
+                                            "Niger,Niamey,13.516666666666667,2.116667,NE,Africa\n" +
+                                            "Nigeria,Abuja,9.083333333333334,7.533333,NG,Africa\n" +
+                                            "Rwanda,Kigali,-1.95,30.050000,RW,Africa\n" +
+                                            "Saint Helena,Jamestown,-15.933333333333334,-5.716667,SH,Africa\n" +
+                                            "Sao Tome and Principe,Sao Tome,0.3333333333333333,6.733333,ST,Africa\n" +
+                                            "Senegal,Dakar,14.733333333333333,-17.633333,SN,Africa\n" +
+                                            "Seychelles,Victoria,-4.616666666666667,55.450000,SC,Africa\n" +
+                                            "Sierra Leone,Freetown,8.483333333333333,-13.233333,SL,Africa\n" +
+                                            "Somalia,Mogadishu,2.066666666666667,45.333333,SO,Africa\n" +
+                                            "South Africa,Pretoria,-25.7,28.216667,ZA,Africa\n" +
+                                            "South Sudan,Juba,4.85,31.616667,SS,Africa\n" +
+                                            "Sudan,Khartoum,15.6,32.533333,SD,Africa\n" +
+                                            "Swaziland,Mbabane,-26.316666666666666,31.133333,SZ,Africa\n" +
+                                            "Tanzania,Dar es Salaam,-6.8,39.283333,TZ,Africa\n" +
+                                            "Togo,Lome,6.116666666666666,1.216667,TG,Africa\n" +
+                                            "Tunisia,Tunis,36.8,10.183333,TN,Africa\n" +
+                                            "Uganda,Kampala,0.31666666666666665,32.550000,UG,Africa\n" +
+                                            "Zambia,Lusaka,-15.416666666666666,28.283333,ZM,Africa\n" +
+                                            "Zimbabwe,Harare,-17.816666666666666,31.033333,ZW,Africa\n" +
+                                            "British Indian Ocean Territory,Diego Garcia,-7.3,72.400000,IO,Africa\n" );
+    /* Map using CSV from URL */
+    var url = window.location.href.substring(0, window.location.href.lastIndexOf('/')) + "/data/europe-capitals.csv";
+    geocsv_lite.core.initialise_map_element("url-map", url);
+  </script>
+  </body>
+</html>
