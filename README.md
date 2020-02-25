@@ -2,6 +2,10 @@
 
 An even more ultra-lightweight tool to show comma-separated value data on a map.
 
+## Demo
+
+There's a [working demo site](https://simon-brooke.github.io/geocsv-js/), from which you can crib how to integrate this into your own website.
+
 ## Other variants
 
 This is a little project I've played about with, and there are now three variants:
