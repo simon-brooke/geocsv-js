@@ -2,10 +2,6 @@
 
 An even more ultra-lightweight tool to show comma-separated value data on a map.
 
-## WARNING
-
-Doesn't work yet.
-
 ## Overview
 
 This is a third iteration of GeoCSV. The [original](https://github.com/simon-brooke/geocsv) was written quickly in Clojure and ClojureScript, with CSV parsing done server side and React (via [re-frame](https://github.com/day8/re-frame)) driving the client side. That's my comfort zone; but it had the benefit that my customer wanted to pull data from Google Sheets, which you can't do from client side (or at least I don't know how to) because of cross-site scripting protections.
