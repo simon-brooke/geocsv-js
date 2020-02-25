@@ -1,0 +1,28 @@
+{
+  "name": "@simon_brooke/geocsv",
+  "version": "1.0.0",
+  "description": "An ultra-lightweight tool to show comma-separated value data on a map.",
+  "main": "js/geocsv.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/simon-brooke/geocsv-js.git"
+  },
+  "keywords": [
+    "CSV",
+    "map",
+    "GIS"
+  ],
+  "author": "Simon Brooke",
+  "license": "GPL-2.0-or-later",
+  "bugs": {
+    "url": "https://github.com/simon-brooke/geocsv-js/issues"
+  },
+  "homepage": "https://simon-brooke.github.io/geocsv-js/",
+  "dependencies": {
+    "leaflet": "^1.6.0",
+    "papaparse": "^5.1.1"
+  }
+}

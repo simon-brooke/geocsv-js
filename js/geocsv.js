@@ -81,6 +81,12 @@ var GeoCSV = {
    */
   GIS: {
     /**
+     * the relative or absolute URL of the place where map pin images may be
+     * fetched from.
+     */
+    iconUrlBase: "img/map-pins/",
+
+    /**
      * Return an appropriate pin image name for this `record`.
      */
     pinImage( record) {
@@ -124,13 +130,13 @@ var GeoCSV = {
       if ( !isNaN( lat) && !isNaN( lng)) {
         var pin = L.icon( {iconAnchor: [16, 41],
                            iconSize: [32, 42],
-                           iconUrl: "img/map-pins/" +
+                           iconUrl: this.iconUrlBase +
                            this.pinImage( record) +
                            ".png",
                            riseOnHover: true,
                            shadowAnchor: [16, 23],
                            shadowSize: [57, 24],
-                           shadowUrl: "img/map-pins/shadow_pin.png"});
+                           shadowUrl: this.iconUrlBase + "shadow_pin.png"});
         var marker = L.marker( L.latLng( lat, lng),
                               {icon: pin, title: record["name"]});
         marker.bindPopup( this.popupContent( record));
@@ -184,8 +190,6 @@ var GeoCSV = {
           view.fitBounds( [[ maxLat, maxLng],
                            [ minLat, minLng]]);
         }
-        //return [ minLat + ( ( maxLat - minLat) / 2),
-        //        minLng + ( ( maxLng - minLng) / 2)];
       }
     },
 
@@ -315,5 +319,13 @@ var GeoCSV = {
         this.Notify.error( error);
       }
     }
+  },
+
+  /**
+   * Set the base address from which to serve icon (map pin) URLs to thia
+   * `iconUrlBase` value.
+   */
+  setIconUrlBase( iconUrlBase) {
+    this.GIS.iconUrlBase = String( iconUrlBase);
   }
 }
