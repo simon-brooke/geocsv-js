@@ -100,7 +100,7 @@ crossorigin=""/>
            style="height: 600px; width: 80%; border: thin solid gray;"></div>
       <div id="doc">
         <p>
-          Use this page as a crib for how to use <b>GeoCSV Lite</b> in your projects. In order
+          Use this page as a crib for how to use <b>geocsv-js</b> in your projects. In order
           for it to work, you need:
         </p>
         <ol>
@@ -111,9 +111,9 @@ crossorigin=""/>
             </ol>
           </li>
           <li>
-            A line which includes the geocsv_lite library, which should be
+            A line which includes the geocsv library, which should be
             <em>after</em> those including the dependencies: <br/>
-            <samp>&lt;script src="js/compiled/geocsv_lite.js"
+            <samp>&lt;script src="js/geocsv.js"
               type="text/javascript"&gt;&lt;/script&gt;</samp>
           </li>
           <li>One (or more) <code>div</code> elements to contain your maps. It
@@ -122,8 +122,8 @@ crossorigin=""/>
           <li>
             For each <code>div</code> which you wish to contain a map view,
             an invocation of the function
-            <code>geocsv_lite.core.initialiseMapElement(id, data-source)</code>: <br/>
-            <samp>&lt;script&gt;geocsv_lite.core.initialiseMapElement("map", "data/data.csv");&lt;/script&gt;</samp>
+            <code>GeoCSV.initialiseMapElement(id, data-source)</code>: <br/>
+            <samp>&lt;script&gt;GeoCSV.initialiseMapElement("map", "data/data.csv");&lt;/script&gt;</samp>
           </li>
         </ol>
         <p>
@@ -172,7 +172,7 @@ crossorigin=""/>
       <div>
         <img height="16" width="16" alt="GitHub"
              src="img/credits/github-logo-transparent.png"/>Find me/fork me on
-        <a href="https://github.com/simon-brooke/geocsv-lite">Github</a> ||
+        <a href="https://github.com/simon-brooke/geocsv-js">Github</a> ||
         <img height="16" width="16"
              alt="Free Software Foundation"
              src="img/credits/gnu.small.png"/>Licensed under the
